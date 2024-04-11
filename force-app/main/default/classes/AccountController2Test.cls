@@ -5,10 +5,6 @@ public class AccountController2Test {
         Account testAccount = new Account(Name = 'Test Account');  
         insert testAccount;  
           
-        // Set the Page context  
-        Test.setCurrentPage(Page.AccountDetail); // replace with your VF page  
-        ApexPages.currentPage().getParameters().put('id', testAccount.Id);  
-          
         // Initialize the controller  
         AccountController2 controller = new AccountController2();  
           
