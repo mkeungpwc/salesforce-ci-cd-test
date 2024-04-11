@@ -1,0 +1,18 @@
+<aura:component controller="OpenAIController" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="chatMessages" type="Object[]" default="[]" />
+    <aura:attribute name="userInput" type="String" default="" />
+
+    <div class="container">
+        <div class="chat-window">
+            <aura:iteration items="{!v.chatMessages}" var="message">
+                <div class="{!'chat-bubble-' + message.role}">
+                    <div>{!message.content}</div>
+                </div>
+            </aura:iteration>
+            <div class="input-row">
+                <lightning:input type="text" label="Type your message" onchange="{!c.handleInputChange}" value="{!v.userInput}" />
+                <lightning:button variant="brand" label="Send" onclick="{!c.sendMessage}" />
+            </div>
+        </div>
+    </div>
+</aura:component>

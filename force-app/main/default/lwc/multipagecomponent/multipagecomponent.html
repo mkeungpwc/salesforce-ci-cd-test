@@ -1,0 +1,9 @@
+<template>
+	<c-pageone if:true={showPageOne} input-value-page-one={inputValuePageOne}
+		oninputchangepageone={handleInputChangePageOne} onsave={handleSave} onnavigate={handleNavigate}>
+	</c-pageone>
+	<c-pagetwo if:true={showPageTwo} input-value-page-two={inputValuePageTwo}
+		oninputchangepagetwo={handleInputChangePageTwo} onsave={handleSave} onnavigate={handleNavigate}>
+	</c-pagetwo>
+    <c-pagethree if:true={showPageThree} input-value-page-one={inputValuePageOne} input-value-page-two={inputValuePageTwo} onsubmit={handleSubmit} onnavigate={handleNavigate}></c-pagethree>
+</template>

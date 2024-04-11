@@ -1,0 +1,3 @@
+<apex:page controller="BarcodeController" renderAs="pdf">  
+    <apex:image url="{!barcodeUrl}"/>  
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:component controller="code39" access="global">
+    <apex:attribute assignTo="{!shouldCheckDigit}" type="boolean" name="checkDigit" default="false" description="True if should append additional check character." />
+    <apex:attribute assignTo="{!sourceCodeValue}" type="string" name="codeValue" description="The string to encode." />
+    <apex:stylesheet value="{!URLFOR($Resource.barcodeCSS)}"/>
+    <div style="display: inline-block; border: 1px solid black; min-width: 1in; padding: 0.25in 1in;" >
+        <div>
+            <apex:repeat value="{!barCodeString}" var="bar">
+                <apex:outputText value="" styleClass="{!if(bar='1','blackbar','whitebar')}" />
+            </apex:repeat>
+        </div>
+        <div style="text-align: center">
+            {!sourceCodeValue}
+        </div>
+    </div>
+</apex:component>

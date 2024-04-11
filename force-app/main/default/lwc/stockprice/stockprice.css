@@ -1,0 +1,28 @@
+.slds-form-element {
+    padding-bottom: 1rem;
+}
+
+.slds-input {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.slds-button {
+    background-color: #0070d2;
+    border: 1px solid #0070d2;
+    border-radius: 0.25rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}

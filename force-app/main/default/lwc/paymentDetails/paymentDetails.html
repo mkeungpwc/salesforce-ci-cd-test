@@ -1,0 +1,16 @@
+<template>
+
+    <div class="payment-section">
+      <h2 class="section-header">Payment Information</h2>
+      <div class="section-subheader">Enter your payment details below</div>
+      <div>
+        <lightning-input type="number" label="Card Number" value={cardNumber} onchange={updateCardNumber} class="form-input"></lightning-input>
+        <lightning-input type="date" label="Expiration Date" value={expirationDate} onchange={updateExpirationDate} class="form-input"></lightning-input>
+        <lightning-input type="number" label="CVV" value={cvv} onchange={updateCVV} class="form-input"></lightning-input>
+        <lightning-input type="number" label="Amount" value={amount} onchange={updateAmount} class="form-input"></lightning-input>
+      </div>
+      <div class="section-footer">
+        <lightning-button variant="brand" label="Submit Payment" onclick={handlePayment}></lightning-button>
+      </div>
+    </div>
+  </template>

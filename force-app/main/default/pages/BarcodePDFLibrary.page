@@ -1,0 +1,18 @@
+<apex:page renderAs="pdf">  
+    <head>  
+        <style>  
+            @font-face {  
+                font-family: 'Barcode39';  
+                src: url("{!URLFOR($Resource.Barcode39Font)}") format('truetype');  
+            }  
+            .barcode {  
+                font-family: 'Barcode39';  
+                font-size: 48px;  
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <div class="barcode">*123456789*</div>  
+    </body>  
+    <c:barcodeVFcomponent checkDigit="false" codeValue="123456789"/>  
+</apex:page>

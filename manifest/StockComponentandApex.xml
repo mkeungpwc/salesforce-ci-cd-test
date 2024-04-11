@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>57.0</version>
+    <types>
+        <members>stockprice</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>StockController</members>
+        <name>ApexClass</name>
+    </types>
+</Package>

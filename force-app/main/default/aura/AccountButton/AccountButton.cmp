@@ -1,0 +1,16 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction" access="global" controller="AccountController">
+    <aura:attribute name="account" type="Object"/>
+    <aura:attribute name="showComponent" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.showComponent}">
+            <lightning:input type="text" label="Account Name" value="{!v.account.Name}" required="true"/>
+            <br/>
+            <lightning:button label="Save" variant="brand" onclick="{!c.handleSave}"/>
+            <lightning:button label="Cancel" onclick="{!c.handleCancel}"/>
+        </aura:if>
+        <aura:if isTrue="{!not(v.showComponent)}">
+            <p>This component can only be launched for Accounts with an Industry of "Apparel".</p>
+        </aura:if>
+    </div>
+</aura:component>

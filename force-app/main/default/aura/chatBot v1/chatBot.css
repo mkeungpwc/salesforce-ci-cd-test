@@ -1,0 +1,26 @@
+.THIS .chat-window {
+    background-color: #fcf9f9;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.THIS .input-row {
+    margin-bottom: 10px;
+}
+
+.THIS .chat-bubble-user {
+    background-color: #f1f0f0;
+    border-radius: 10px;
+    max-width: 75%;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.THIS .chat-bubble-assistant {
+    background-color: #d7f1ff;
+    border-radius: 10px;
+    max-width: 75%;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}

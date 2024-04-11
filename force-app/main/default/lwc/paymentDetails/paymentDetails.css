@@ -1,0 +1,29 @@
+.payment-section {
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+.section-header {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.section-subheader {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.form-input {
+  width: 100%;
+}
+.form-input + .form-input {
+  margin-top: 0.5rem;
+}
+.section-footer {
+  margin-top: 1rem;
+  text-align: right;
+}
+.section-footer button {
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+}
